@@ -54,6 +54,7 @@ def check_and_pause():
 
 
 def record_single_sample(emotion, count, path):
+# Method based on https://github.com/MITESHPUTHRANNEU/Speech-Emotion-Analyzer/blob/master/AudioRecorder.ipynb
 	CHUNK = 1024 
 	FORMAT = pyaudio.paInt16 #paInt8
 	CHANNELS = 2 
