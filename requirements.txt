@@ -9,13 +9,12 @@ google-auth-oauthlib==0.4.1
 google-pasta==0.1.8
 googleapis-common-protos==1.51.0
 h5py==2.8.0
-jupyter-client==5.2.3
-jupyter-core==4.4.0
 librosa==0.7.2
 llvmlite==0.31.0
 lxml==4.3.2
 matplotlib==3.0.2
 mock==3.0.5
+notebook
 numba==0.47.0
 numpy==1.16.2
 oauthlib==2.1.0
