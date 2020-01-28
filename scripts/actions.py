@@ -9,7 +9,7 @@ import spotipy
 # Spotify Declarations
 # Register with spotify for a developer account to get client-id and client-secret
 # if Spotify_credentials:
-with open(r"./scripts/oauth/spotify_creds.json") as f:
+with open(r"scripts/oauth/spotify_creds.json") as f:
     spotify_creds = json.load(f)
 client_id = spotify_creds['client_id']
 client_secret = spotify_creds['client_secret']
@@ -35,7 +35,7 @@ def play_spotify(phrase):
         uri = 'spotify:playlist:3xWxT0SzhFsJeWsLmR5pgJ'
     else:
         return
-    sp.start_playback(device_id='955cdf0b-5905-58bc-bb43-167d41a802cd',
+    sp.start_playback(device_id='OPTIONAL DEVICE ID',
                       context_uri=uri)
 
 def pause_spotify():
