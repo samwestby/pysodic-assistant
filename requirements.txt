@@ -11,9 +11,6 @@ googleapis-common-protos==1.51.0
 h5py==2.8.0
 jupyter-client==5.2.3
 jupyter-core==4.4.0
-Keras==2.3.1
-Keras-Applications==1.0.8
-Keras-Preprocessing==1.1.0
 librosa==0.7.2
 llvmlite==0.31.0
 lxml==4.3.2
