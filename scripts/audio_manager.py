@@ -9,10 +9,10 @@ from pydub.playback import play
 
 def augment_data():
 	path = os.cwd()
-    path = os.path.join(path, 'data')
-    os.mkdir(os.path.join(path, 'augmented'))
-    path = os.path.join(path, 'raw')
-    out_path = os.path.join(path, 'data', 'augmented')
+	path = os.path.join(path, 'data')
+	os.mkdir(os.path.join(path, 'augmented'))
+	path = os.path.join(path, 'raw')
+	out_path = os.path.join(path, 'data', 'augmented')
 	for file in os.listdir(path):
 		song = AudioSegment.from_wav(os.path.join(path, file))
 		louder = song + 10
@@ -26,8 +26,8 @@ def record_dataset():
 	path = 'data'
 	if not os.path.isdir(path):
 		os.mkdir(path)
-    path = os.path.join(path, 'raw')
-    if not os.path.isdir(path):
+	path = os.path.join(path, 'raw')
+	if not os.path.isdir(path):
 		os.mkdir(path)
 	for emotion in emotions:
 		record_all_emotion_samples(emotion, path)
@@ -47,10 +47,10 @@ def record_all_emotion_samples(emotion, path):
 
 
 def check_and_pause():
-    if keyboard.is_pressed('p'):
-			while True:
-				if keyboard.is_pressed('r'):
-					break
+	if keyboard.is_pressed('p'):
+		while True:
+			if keyboard.is_pressed('r'):
+				break
 
 
 def record_single_sample(emotion, count, path):
@@ -93,5 +93,4 @@ def record_single_sample(emotion, count, path):
 	
 	
 if __name__ == "__main__":
-	# augment_data()
-	# # record_dataset()
+	record_dataset()
