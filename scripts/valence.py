@@ -5,14 +5,15 @@ from keras.models import model_from_json
 import librosa
 import librosa.display
 import pandas as pd
+import os
 
 
 def load_model():
-	with open('model_2_cat.json', 'r') as file:
+	with open(os.path.join('scripts', 'ml', 'model_2_cat.json'), 'r') as file:
 		loaded_model_json = file.read()
 
 	loaded_model = model_from_json(loaded_model_json)
-	loaded_model.load_weights('2_cat.h5')
+	loaded_model.load_weights(os.path.join('scripts', 'ml', '2_cat.h5'))
 	return loaded_model
 
 
