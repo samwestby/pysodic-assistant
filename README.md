@@ -1,4 +1,4 @@
-# prosodic-assistant
+# pyosodic-assistant
 This project uses the Google Assistant SDK and a simple machine learning model to create a smart home assistant. This assistant is influenced by the emotion in the user's voice
 
 ## Getting Started
@@ -20,9 +20,13 @@ Windows
     python3 -m pip install -r requirements.txt
    
 
-COMING -- Install Tensorflow and Keras
+Install Tensorflow: [Video showing the how to install on a Raspberry Pi](https://youtu.be/GNRg2P8Vqqs)
 
-Follow (these instructions)[https://spotipy.readthedocs.io/en/latest/#getting-started] to set up the Spotify Python API
+Install Keras
+
+    python3 -m pip install keras
+
+Follow [these instructions](https://spotipy.readthedocs.io/en/latest/#getting-started) to set up the Spotify Python API
 
 If you're running this on a Raspberry Pi, you're going to have to set up your audio devices. [This repo](https://github.com/binnes/tobyjnr/wiki/Getting-Sound-to-work-on-the-Raspberry-Pi) was really helpful for me to do that.
 
@@ -71,6 +75,7 @@ Hope that your model is accurately recognizing your vocal emotions.
 
 
 ## Running the Google Assistant SDK - copied from [here](https://github.com/googlesamples/assistant-sdk-python/blob/master/google-assistant-grpc/README.rst)
+[Video tutorial for this process](https://youtu.be/ED87nbiSrEc)
 
 > **note**
 >
