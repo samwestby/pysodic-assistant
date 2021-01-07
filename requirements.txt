@@ -11,7 +11,7 @@ googleapis-common-protos==1.51.0
 h5py==2.8.0
 librosa==0.7.2
 llvmlite==0.31.0
-lxml==4.3.2
+lxml==4.6.2
 matplotlib==3.0.2
 mock==3.0.5
 notebook
