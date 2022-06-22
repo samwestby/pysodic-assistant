@@ -16,7 +16,7 @@ matplotlib==3.0.2
 mock==3.0.5
 notebook
 numba==0.47.0
-numpy==1.16.2
+numpy==1.22.0
 oauthlib==2.1.0
 pandas==0.23.3+dfsg
 requests==2.21.0
